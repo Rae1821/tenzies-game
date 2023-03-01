@@ -1,13 +1,92 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Karla', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #0B2434;
+  padding: 2em;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+main {
+  background-color: #F5F5F5;
+  border-radius: 10px;
+  max-width: 580px;
+  height: 450px;
+  padding: 1.25em;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.instructions {
+  font-family:'Courier New', Courier, monospace;
+  text-align: center;
+  margin-top: 0;
+}
+
+.num--rolls {
+  font-size: .75rem;
+  margin-top: 0;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.rolls--to--win {
+  font-size: 1.25rem;
+  font-family:'Courier New', Courier, monospace;
+  margin-top: 0;
+}
+
+.dice--container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.die--front {
+  width: 50px;
+  height: 50px;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.15);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  cursor: pointer;
+}
+
+.roll--dice {
+  height: 50px;
+  width: 150px;
+  border: none;
+  border-radius: 6px;
+  background-color: #5035FF;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 2em;
+}
+
+.roll--dice:focus {
+  outline: none;
+}
+
+.roll--dice:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0,0,0,0.7);
+}
+
