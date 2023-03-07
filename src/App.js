@@ -1,4 +1,4 @@
-import './App.css'
+
 import Die from './Die'
 import { useState, useEffect } from 'react'
 import { nanoid } from 'nanoid' 
@@ -26,7 +26,7 @@ function App() {
    
   }, [dice])
 
-  //add a new die to the dice array
+  //add a new die object to the dice array
   function allNewDice() {
     const newDice = []
     for(let i = 0; i < 10; i++) {
